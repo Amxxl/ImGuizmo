@@ -18,12 +18,13 @@ project "ImGuizmo"
 		"ImGuizmo.h",
 		"ImSequencer.cpp",
 		"ImSequencer.h",
-		"ImZoomSlider.h"
+		"ImZoomSlider.h",
+      "premake5.lua"
 	}
 	
 	includedirs
 	{
-		"%{wks.location}/Projects/ImGui"
+		"%{IncludeDir.ImGui}"
 	}
 
 	filter "system:windows"
